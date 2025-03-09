@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import ReactLoading from "react-loading";
 
@@ -96,6 +96,11 @@ export default function ProductDetailPage() {
                 )}
               </button>
             </div>
+            <button className="btn btn-secondary mt-3">
+              <Link to="/products" className="text-white text-decoration-none">
+                回到產品列表
+              </Link>
+            </button>
           </div>
         </div>
       </div>
