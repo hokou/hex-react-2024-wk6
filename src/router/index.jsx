@@ -1,7 +1,7 @@
 import { createHashRouter } from "react-router-dom";
 import FrontLayout from "../layouts/FrontLayout";
 import HomePage from "../pages/HomePage";
-import ProductPage from "../pages/ProductPage";
+import ProductsPage from "../pages/ProductsPage";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import CartPage from "../pages/CartPage";
 import NotFoundPage from "../pages/NotFoundPage";
@@ -17,7 +17,7 @@ const router = createHashRouter([
       },
       {
         path: "products",
-        element: <ProductPage />,
+        element: <ProductsPage />,
       },
       {
         path: "products/:id",
